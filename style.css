@@ -1,0 +1,227 @@
+/* navbar */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.navbar{
+    position: relative;
+    z-index: 1;
+    
+}
+
+.navbar .logo{
+    font-family: Rowdies;
+    font-size: 100;
+    color : #ffbe25
+}
+
+.navbar .navbar-nav{
+    color: white;
+}
+
+
+/* jumbotron */
+
+.jumbotron
+{
+    font-family: Montserrat;
+    color: white;
+    text-shadow: rgba(0,0,0,0.1);
+    background-color: #252525;
+    background-size: cover;
+    text-align: left;  
+}
+
+.jumbotron .lead{
+    margin-top: 20px;
+    font-size: 20.95;
+    font-weight: lighter;
+}
+
+.jumbotron .display-4{
+    margin-top: -20px;
+    font-size: 63;
+    font-weight: bold;
+}
+
+.jumbotron p{
+    font-weight: normal;
+    font-size: 25;
+    margin-top : -15px;
+}
+
+.jumbotron .tombol{
+    font-weight: bolder;
+}
+
+.jumbotron img{
+    width:250px;
+    margin-left: 100px; 
+}
+
+/* about */
+
+#about{
+    text-align: center;
+    margin-top: -40px;
+}
+#about img{
+    /* width: ; */
+    margin-top: 40px;
+}
+
+#about h3{
+    font-weight: bold;
+    border-bottom: 3px;
+}
+
+#about p{
+    font-size:17px;
+    color :grey;
+    font-weight : 200;
+    margin-top: 20px;
+}
+
+/* work */
+
+
+#work-area{
+    margin-top: 150px;
+    font-family: Montserrat;
+}
+
+#work-area .title-text h2{
+    font-weight: bold;
+}
+
+.work img{
+    width: 70px;
+}
+
+.work h5{
+    font-weight: bolder;
+}
+
+.work p{
+    font-weight: lighter;
+}
+
+/* Utility */
+.tombol{
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 100 px;
+}
+
+
+
+/* contact */
+
+.card img{
+    width: 40px;
+    padding: 5px;
+}
+
+/* Desktop Version */
+
+@media (min-width: 600px) {
+
+    /* navbar */
+    .navbar-brand, .nav-link{
+        text-shadow : 1px 1px 1px rgba(0,0,0,0.1);
+        color: #ffbe25;
+    }
+
+    .nav-link{
+        text-transform: uppercase;
+        margin-right: 20px;
+    }
+    
+    .nav-link:hover::after{
+        content:'';
+        display: block;
+        border-bottom: 3px solid #ffbe25;
+        width: 50%;
+        margin : auto;
+        padding-bottom: 5px;
+        margin-bottom:-8px;
+    }
+
+    /* jumbotron */
+    .jumbotron{
+        text-align: left;
+        background-size: cover;
+        height : 680px;
+        margin-top: -70px;  
+        padding: 20px;
+        
+    }
+
+    .jumbotron img{
+        width: 410px;
+        margin-left : -700px;
+        margin-top: -250px;
+
+    }
+
+    .jumbotron .lead{
+        margin-top: 250px;
+        font-weight: lighter;
+        margin-left: 720px;
+    }
+    
+    .jumbotron .display-4{
+        margin-top: -20px;
+        font-weight: bold;
+        margin-left: 720px;
+    }
+    
+    .jumbotron p{
+        font-weight: normal;
+        font-size: 25;
+        margin-top : -10px;
+        margin-left: 720px;
+    }
+    
+    .jumbotron .tombol{
+        margin-top: -150px;
+        margin-left: 720px;
+        font-weight: bolder;
+    }
+    /* about */
+
+    #about{
+        text-align: right;
+        margin-top: -32px;
+    }
+
+    #about img{
+        margin-left: 670px;        
+    }
+   
+
+    #about h3{
+        margin-right: -550px;
+        margin-top: -250px;
+    }
+
+    #about p{
+        margin-right: -550px;
+    }
+
+    /* work */
+    
+    #work-area{        
+        background-color: #f0eeee;
+        margin-top: 30x;
+    }
+
+    /* skill */
+   
+
+    .card img{
+        width: 50px;
+    }
+}
